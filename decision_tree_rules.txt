@@ -1,0 +1,50 @@
+DecisionTreeClassificationModel: uid=DecisionTreeClassifier_303e8bb6c6fa, depth=5, numNodes=33, numClasses=2, numFeatures=38
+  If (feature 10 <= 3.5)
+   If (feature 10 <= 1.5)
+    If (feature 16 <= 0.5)
+     Predict: 0.0
+    Else (feature 16 > 0.5)
+     If (feature 18 in {2.0,4.0,5.0,7.0,9.0,11.0})
+      If (feature 0 <= 0.5)
+       Predict: 0.0
+      Else (feature 0 > 0.5)
+       Predict: 1.0
+     Else (feature 18 not in {2.0,4.0,5.0,7.0,9.0,11.0})
+      If (feature 13 <= 0.5)
+       Predict: 1.0
+      Else (feature 13 > 0.5)
+       Predict: 0.0
+   Else (feature 10 > 1.5)
+    If (feature 18 in {0.0,2.0,3.0,4.0,5.0,6.0,8.0,10.0,11.0})
+     Predict: 0.0
+    Else (feature 18 not in {0.0,2.0,3.0,4.0,5.0,6.0,8.0,10.0,11.0})
+     If (feature 11 <= 0.5)
+      Predict: 1.0
+     Else (feature 11 > 0.5)
+      Predict: 0.0
+  Else (feature 10 > 3.5)
+   If (feature 18 in {3.0,10.0,12.0,13.0})
+    If (feature 11 <= 0.5)
+     Predict: 0.0
+    Else (feature 11 > 0.5)
+     If (feature 4 <= 0.5)
+      If (feature 0 <= 0.5)
+       Predict: 0.0
+      Else (feature 0 > 0.5)
+       Predict: 1.0
+     Else (feature 4 > 0.5)
+      Predict: 1.0
+   Else (feature 18 not in {3.0,10.0,12.0,13.0})
+    If (feature 5 <= 0.5)
+     If (feature 18 in {2.0,4.0,5.0,6.0,7.0,8.0,9.0})
+      If (feature 0 <= 0.5)
+       Predict: 0.0
+      Else (feature 0 > 0.5)
+       Predict: 1.0
+     Else (feature 18 not in {2.0,4.0,5.0,6.0,7.0,8.0,9.0})
+      If (feature 16 <= 0.5)
+       Predict: 0.0
+      Else (feature 16 > 0.5)
+       Predict: 1.0
+    Else (feature 5 > 0.5)
+     Predict: 1.0
